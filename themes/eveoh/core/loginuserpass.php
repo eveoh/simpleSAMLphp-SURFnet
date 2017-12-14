@@ -93,7 +93,8 @@ if ($includeLanguageBar) {
 			<div class="item">
 				<h1><?php echo $this->t('{login:user_pass_header}'); ?></h1>
 				<p class="info"><?php echo $this->t('{login:user_pass_text}'); ?></p>
-				<p class="info">Test accounts student1 - 5 and staff1 - 5 are available. The password for these accounts is <i>password</i>.</p>
+				<p class="info">Test accounts <i>student1 - 5</i> and <i>staff1 - 5</i> are available.<br>
+				The password for these accounts is <i>password</i>.</p>
 
 <?php
 if ($this->data['errorcode'] !== NULL) {
