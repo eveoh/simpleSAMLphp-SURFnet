@@ -126,8 +126,10 @@ foreach ($this->data['stateparams'] as $name => $value) {
 			<div class="subitem">
 
 			  <div class="createIndex">
+				  <!--
                 <h2><?php echo $this->t('{login:help_header}');?></h2>
                 <p><?php echo $this->t('{login:help_text}');?></p>
+-->
 <!--
        		    <ul>
 					<h2>Tips:</h2>
