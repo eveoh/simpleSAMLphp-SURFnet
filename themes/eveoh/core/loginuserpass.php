@@ -30,14 +30,6 @@ if(array_key_exists('header', $this->data)) {
 ?></title>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML_Module::getModuleURL('eveohtheme/style.css'); ?>" />
-  <link rel="stylesheet" media="screen and (max-width: 370px)" href="<?php echo SimpleSAML_Module::getModuleURL('eveohtheme/style_320.css'); ?>" />
-	<link rel="stylesheet" media="screen and (max-device-width: 480px), handheld" href="<?php echo SimpleSAML_Module::getModuleURL('eveohtheme/style_480.css'); ?>" />
-	
-	<script type="text/javascript">
-	function initiate(){
-		document.getElementById('username').focus();
-	}
-	</script>
 	
 </head>
 
@@ -107,9 +99,9 @@ if ($this->data['errorcode'] !== NULL) {
 ?>				
 				<form id="login" method="POST" action="?" name="f">
 					<label for="username"><?php echo $this->t('{login:username}'); ?></label> <!-- <span class="example">(bv. 123456@catherijne.nl)</span> -->
-					<input type="text" name="username" id="username" value="<?php echo htmlspecialchars($this->data['username']); ?>" autocomplete= "off" />
+					<input type="text" name="username" id="username" value="<?php echo htmlspecialchars($this->data['username']); ?>" autofocus />
 					<label for="password"><?php echo $this->t('{login:password}'); ?></label>
-					<input type="password" name="password" id="password" autocomplete= "off" />
+					<input type="password" name="password" id="password" />
 					<!-- <a href="#" class="recover">Wachtwoord vergeten?</a> -->
 					<input onclick="this.value='Processing...';this.disabled=true;this.form.submit();return true;" type="submit" value="<?php echo $this->t('{login:login_button}'); ?>" />
 
