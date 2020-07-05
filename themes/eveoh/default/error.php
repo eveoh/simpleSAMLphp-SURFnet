@@ -42,7 +42,7 @@ if(array_key_exists('header', $this->data)) {
 	
 		<!-- HEADER MET LOGO, EVENTUELE TITEL EN TAAL TOGGLE -->
 		<div id="header">
-			<img id="logo" src="<?php echo SimpleSAML_Module::getModuleURL('eveohtheme/logo.svg'); ?>" alt="" />
+			<img id="logo" src="<?php echo SimpleSAML_Module::getModuleURL('eveohtheme/logo.svg'); ?>" alt="Eveoh logo" />
 			<h1 class="mainTitle"></h1>
 			<ul class="langSelect">
 
