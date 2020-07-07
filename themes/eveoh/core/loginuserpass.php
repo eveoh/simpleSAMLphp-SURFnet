@@ -99,7 +99,7 @@ if ($this->data['errorcode'] !== NULL) {
 ?>				
 				<form id="login" method="POST" action="?" name="f">
 					<label for="username"><?php echo $this->t('{login:username}'); ?></label> <!-- <span class="example">(bv. 123456@catherijne.nl)</span> -->
-					<input type="text" name="username" id="username" value="<?php echo htmlspecialchars(@$this->data['username']); ?>" autocomplete="username">
+					<input type="text" name="username" id="username" value="<?php echo htmlspecialchars(@$this->data['username']); ?>" autofocus autocomplete="username">
 					<label for="password"><?php echo $this->t('{login:password}'); ?></label>
 					<input type="password" name="password" id="password" autocomplete="current-password">
 					<!-- <a href="#" class="recover">Wachtwoord vergeten?</a> -->
